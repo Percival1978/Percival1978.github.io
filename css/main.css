@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*FlexWrapper*/
+
+.wrapper {
+  height: 950px;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.leftSide {
+  display: flex;
+  flex: 3;
+  color: white;
+  background-image: url("../img/toadstoolback.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  flex-direction:column;
+}
+
+.leftSide h2 {
+  flex: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+.leftSide h2 span {
+  color: #4bb8d2;
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+}
+
+.banner {
+  display: flex;
+  flex:1;
+  flex-direction:column;
+}
+
+.banner h2 {
+  flex:1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  position: relative;
+}
+
+
+.spacer {
+  flex:1;
+}
+
+.rightSide {
+  flex: 0;
+  color: white;
+  justify-content: center;
+  background-color: #801515;
+}
+
+
+/*Inner Content*/
+
+
+
+.content {
+  display: flex;
+  flex: 1;
+  max-height: 100%;
+  height: 900px;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.first {
+  display: flex;
+  background-color: white;
+  margin-top: 1000px;
+  flex-direction: row;
+}
+
+.imageBox {
+  flex: 1;
+  background-image: url("../img/binary.gif");
+  /*background-position: center;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease;
+}
+
+.imageBox:hover {
+  background-image: url("../img/kids.gif");
+  background-position: center;
+}
+
+.textBox {
+  flex: 1;
+  font-family: 'Raleway', sans-serif;
+  color: #6d6d6d;
+  text-align: left;
+}
+
+.textBox div {
+  padding: 15%;
+}
+
+.textBox h1 {
+  font-size: 5em;
+  font-weight: bold;
+  color: #4bb8d2;
+}
+
+.textBox a {
+  text-decoration: none;
+  color: #4bb8d2;
+}
+
+.second {
+  display: flex;
+  /*background-color: #aa3939;*/
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex:1;
+  height: 600px;
+  text-align: center;
+  flex-direction:column;
+  position: relative;
+  background-color: #191919;
+  z-index: 2;
+}
+
+.footerBox {
+  display: flex;
+  flex:2;
+  flex-direction:row;
+  font-size: 20px;
+}
+
+.footerBox div {
+  flex:1;
+  padding: 5%;
+  text-align: left;
+  color: #6d6d6d !important;
+}
+
+.footerBox h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.footerBox div a {
+  flex: 1;
+  text-decoration: none;
+  color: #4bb8d2;
+  line-height: 2em;
+}
+
+
+.titleBox {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+.titleBox h2 {
+  flex:1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  color: white;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.titleBox h2 span {
+  color: #4bb8d2;
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+}
+
+.titleBox p {
+  flex: 1;
+  color:#6d6d6d;
+  margin: 0 auto;
+}
+
+
+
+/*Start tablet screen*/
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+
+  .wrapper, .content {
+    height: 768px;
+  }
+
+  .first {
+    margin-top: 800px;
+  }
+
+
+
+}
+
+/*Start mobile screen*/
+
+@media screen and (max-width:767px){
+
+  .wrapper {
+    flex-direction: column;
+    height:100%;
+  }
+
+  .wrapper div {
+    height: 667px;
+  }
+
+  .leftSide h2 {
+    font-size: 30px;
+  }
+
+  .banner h2 {
+    font-size: 2em;
+  }
+
+  .imageBox {
+    height: 250px;
+  }
+
+  .first {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .textBox {
+    height: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 5%;
+  }
+
+  .footerBox {
+    flex-direction: column;
+  }
+
+  .titleBox {
+    line-height: 2;
+  }
+
+  .titleBox h2 {
+    font-size: 1em;
+  }
+
+  .titleBox h2 span {
+    font-size: 25px;
+  }
+
+
+
+
+
+
+
+
+}
