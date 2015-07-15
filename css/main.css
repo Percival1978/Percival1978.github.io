@@ -43,9 +43,9 @@ body, html {
 }
 
 
-/*FlexWrapper*/
+/*Flexheader*/
 
-.wrapper {
+.header {
   height: 950px;
   color: white;
   flex-direction: column;
@@ -64,7 +64,7 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  z-index: 1;
+  z-index: -1;
 }
 
 .logo {
@@ -101,12 +101,6 @@ body, html {
   flex:1;
 }
 
-.rightSide {
-  flex: 0;
-  color: white;
-  justify-content: center;
-  background-color: #801515;
-}
 
 
 /*Inner Content*/
@@ -122,7 +116,7 @@ body, html {
   justify-content:center;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .first {
@@ -183,7 +177,7 @@ footer {
   flex-direction:column;
   position: relative;
   background-color: #191919;
-  z-index: 2;
+  z-index: 1;
 }
 
 .footerBox {
@@ -224,7 +218,7 @@ footer {
   font-size: 2em;
   color: white;
   position: relative;
-  z-index: 2;
+  /*z-index: 2;*/
   margin: 0 auto;
 }
 
@@ -246,7 +240,7 @@ footer {
 
 @media screen and (max-width:1024px) and (min-width:768px) {
 
-  .wrapper, .content {
+  .header, .content {
     height: 768px;
   }
 
@@ -262,7 +256,7 @@ footer {
 
 @media screen and (max-width:767px){
 
-  .wrapper {
+  .header {
     /*flex-direction: column;*/
     height:667px;
   }
