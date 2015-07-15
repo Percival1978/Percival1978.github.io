@@ -77,6 +77,7 @@ header {
   font-size: 2em;
   position: relative;
   top: 50px;
+  width: 100%;
 }
 .logo h2 span {
   color: #4bb8d2;
