@@ -40,7 +40,8 @@ body, html {
 
 .wrapper {
   height: 950px;
-  flex-direction: row;
+  color: white;
+  flex-direction: column;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -51,22 +52,19 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
-}
-
-.leftSide {
-  display: flex;
-  flex: 3;
-  color: white;
   background-image: url("../img/toadstoolback.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  flex-direction:column;
+  z-index: 1;
 }
 
-.leftSide h2 {
+.logo {
+  flex: 1;
+}
+
+.logo h2 {
   flex: 1;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
@@ -74,23 +72,21 @@ body, html {
   position: relative;
   top: 50px;
 }
-.leftSide h2 span {
+.logo h2 span {
   color: #4bb8d2;
   font-family: 'Lobster', cursive;
   font-size: 45px;
 }
 
 .banner {
-  display: flex;
   flex:1;
-  flex-direction:column;
 }
 
 .banner h2 {
-  flex:1;
   font-family: 'Raleway', sans-serif;
   font-size: 60px;
   position: relative;
+  top: 50%;
 }
 
 
@@ -167,7 +163,7 @@ body, html {
 
 .second {
   display: flex;
-  /*background-color: #aa3939;*/
+  background-color: white;
 }
 
 /*Footer*/
@@ -261,14 +257,11 @@ footer {
 
   .wrapper {
     flex-direction: column;
-    height:100%;
+    height:667px;
   }
 
-  .wrapper div {
-    height: 667px;
-  }
 
-  .leftSide h2 {
+  .logo h2 {
     font-size: 30px;
   }
 
