@@ -45,7 +45,7 @@ body, html {
 
 /*Flexheader*/
 
-.header {
+header {
   height: 950px;
   color: white;
   flex-direction: column;
@@ -240,7 +240,7 @@ footer {
 
 @media screen and (max-width:1024px) and (min-width:768px) {
 
-  .header, .content {
+  header, .content {
     height: 768px;
   }
 
@@ -256,8 +256,7 @@ footer {
 
 @media screen and (max-width:767px){
 
-  .header {
-    /*flex-direction: column;*/
+  header {
     height:667px;
   }
 
