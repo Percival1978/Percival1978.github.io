@@ -35,6 +35,13 @@ body, html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 /*FlexWrapper*/
 
@@ -256,7 +263,7 @@ footer {
 @media screen and (max-width:767px){
 
   .wrapper {
-    flex-direction: column;
+    /*flex-direction: column;*/
     height:667px;
   }
 
@@ -276,6 +283,7 @@ footer {
   .first {
     flex-direction: column;
     height: 100%;
+    margin-top: 700px;
   }
 
   .textBox {
