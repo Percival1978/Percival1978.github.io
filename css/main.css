@@ -77,7 +77,6 @@ header {
   font-size: 2em;
   position: relative;
   top: 50px;
-  width: 100%;
 }
 .logo h2 span {
   color: #4bb8d2;
@@ -164,9 +163,22 @@ header {
 
 .second {
   display: flex;
+  background-color: white;
+}
+
+.aaron {
+  flex: 1;
   background-image: url("../img/aaron.gif");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.html {
+  flex: 1;
+  background-image: url("../img/html.png");
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -271,6 +283,8 @@ footer {
 
   .banner h2 {
     font-size: 1.5em;
+    position: relative;
+    top: 100px;
     /*display: none;*/
   }
 
