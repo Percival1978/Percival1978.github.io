@@ -160,6 +160,15 @@ header {
 .second {
   display: flex;
   background-color: white;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.second div {
+  border: 5px solid black;
+  width: 400px;
+  margin: auto;
+  height: 200px;
 }
 
 .aaron {
