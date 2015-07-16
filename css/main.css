@@ -87,8 +87,8 @@ header {
 .banner h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 60px;
-  position: relative;
-  top: 50%;
+  /*position: relative;
+  top: 50%;*/
 }
 
 
