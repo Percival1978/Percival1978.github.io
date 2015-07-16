@@ -269,7 +269,8 @@ footer {
   }
 
   .banner h2 {
-    font-size: 2em;
+    /*font-size: 2em;*/
+    display: none;
   }
 
   .imageBox {
