@@ -270,8 +270,8 @@ footer {
   }
 
   .banner h2 {
-    /*font-size: 2em;*/
-    display: none;
+    font-size: 1.5em;
+    /*display: none;*/
   }
 
   .imageBox {
