@@ -49,10 +49,6 @@ header {
   height: 950px;
   color: white;
   flex-direction: column;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: stretch;
   position: fixed;
