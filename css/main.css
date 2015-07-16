@@ -107,10 +107,6 @@ header {
 
 
 .content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex: 1;
   max-height: 100%;
@@ -123,10 +119,6 @@ header {
 }
 
 .first {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   background-color: white;
   margin-top: 1000px;
@@ -193,10 +185,6 @@ header {
 /*Footer*/
 
 footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex:1;
   height: 600px;
@@ -208,10 +196,6 @@ footer {
 }
 
 .footerBox {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex:2;
   flex-direction:row;
@@ -238,10 +222,6 @@ footer {
 
 
 .titleBox {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex:1;
   flex-direction: column;
