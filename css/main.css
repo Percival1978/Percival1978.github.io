@@ -56,7 +56,7 @@ header {
   left: 0;
   width: 100%;
   background-image: url("../img/toadstoolback.gif");
-  background-position: center;
+  /*background-position: center;*/
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -266,7 +266,8 @@ footer {
   header {
     /*height:667px;*/
     padding: 3%;
-    background-image: url("../img/toadstoolbackmob.gif");
+    background-image: url("../img/toadstool.png");
+    background-size: contain;
   }
 
 
