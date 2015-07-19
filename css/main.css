@@ -98,7 +98,6 @@ header {
   text-align: center;
   position: relative;
   z-index: 1;
-  padding: 15%;
 }
 
 .first {
@@ -113,12 +112,15 @@ header {
 .textBox {
   flex: 1;
   font-family: 'Raleway', sans-serif;
-  color: #6d6d6d;
   text-align: left;
+  padding: 10%;
+  margin-bottom: 15%;
+  background-color: #fff;
+  opacity: 0.8;
 }
 
-.textBox div {
-  padding: 15%;
+.textBox p {
+  color: #191919;
 }
 
 .textBox h1 {
