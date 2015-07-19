@@ -93,34 +93,22 @@ header {
   display: flex;
   flex: 1;
   max-height: 100%;
-  /*height: 900px;*/
   flex-direction: column;
   justify-content:center;
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 15%;
 }
 
 .first {
-  display: flex;
-  background-color: white;
+  background-image: url("../img/binary.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 1000px;
   flex-direction: row;
 }
 
-.imageBox {
-  flex: 1;
-  background-image: url("../img/binary.gif");
-  /*background-position: center;*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 0.8s ease;
-}
-
-.imageBox:hover {
-  background-image: url("../img/kids.gif");
-  background-position: center;
-}
 
 .textBox {
   flex: 1;
@@ -144,35 +132,7 @@ header {
   color: #4bb8d2;
 }
 
-.second {
-  display: flex;
-  background-color: white;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
 
-.second div {
-  border: 5px solid black;
-  width: 400px;
-  margin: 2%;
-  height: 200px;
-}
-
-.aaron {
-  flex: 1;
-  background-image: url("../img/aaron.gif");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.html {
-  flex: 1;
-  background-image: url("../img/html.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 /*Footer*/
 
@@ -247,9 +207,6 @@ footer {
 
 @media screen and (max-width:1024px) and (min-width:768px) {
 
-  header, .content {
-    /*height: 768px;*/
-  }
 
   .first {
     margin-top: 800px;
@@ -264,7 +221,6 @@ footer {
 @media screen and (max-width:767px){
 
   header {
-    /*height:667px;*/
     padding: 3%;
     background-image: url("../img/toadstool.png");
     background-size: contain;
@@ -285,9 +241,6 @@ footer {
     margin-top: 250px;
   }
 
-  .imageBox {
-    /*height: 250px;*/
-  }
 
   .first {
     flex-direction: column;
