@@ -176,18 +176,14 @@ footer {
 
 
 .titleBox {
-  display: flex;
   flex:1;
-  flex-direction: column;
 }
 
 .titleBox h2 {
-  flex:1;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   color: white;
   position: relative;
-  /*z-index: 2;*/
   margin: 0 auto;
 }
 
@@ -198,7 +194,6 @@ footer {
 }
 
 .titleBox p {
-  flex: 1;
   color:#6d6d6d;
   margin: 0 auto;
 }
