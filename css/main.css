@@ -76,6 +76,7 @@ header {
 }
 .logo h2 span {
   color: #4bb8d2;
+  font-family: 'Raleway', sans-serif;
   font-size: 45px;
 }
 
@@ -188,6 +189,7 @@ footer {
 
 .titleBox h2 span {
   color: #4bb8d2;
+  font-family: 'Raleway', sans-serif;
   font-size: 45px;
 }
 
