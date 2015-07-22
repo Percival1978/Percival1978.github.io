@@ -55,7 +55,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #801515;
+  background-color: #2ba4c0;
   text-align: center;
   z-index: -1;
 }
@@ -86,9 +86,6 @@ header {
   width: 80%;
 }
 
-.copy {
-  color: #6d6d6d;
-}
 
 
 
