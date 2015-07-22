@@ -245,7 +245,11 @@ footer {
     display: block;
     font-family: 'Raleway', sans-serif;
     color: white;
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+
+  .right hr {
+    width: 80%;
   }
 
 
