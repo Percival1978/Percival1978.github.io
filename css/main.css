@@ -48,19 +48,28 @@ body, html {
 header {
   height: 950px;
   color: white;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   align-items: stretch;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url("../img/toadstoolback.gif");
-  /*background-position: center;*/
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #801515;
   text-align: center;
   z-index: -1;
+}
+
+.left {
+  flex: 1;
+  background-image: url("../img/toadstoolback.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.right {
+  flex: 1;
 }
 
 .logo {
@@ -80,9 +89,7 @@ header {
   font-size: 45px;
 }
 
-.mobileHead {
-  display: none;
-}
+
 
 
 
@@ -103,9 +110,7 @@ header {
 }
 
 .first {
-  background-image: url("../img/binary.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #fff;
   margin-top: 1000px;
   flex-direction: row;
 }
@@ -220,10 +225,11 @@ footer {
 @media screen and (max-width:767px){
 
   header {
-    padding: 6%;
-    background-image: none;
-    background-size: contain;
-    background-color: #333333;
+    flex-direction: column;
+  }
+
+  .left {
+    display: none;
   }
 
   .logo {
@@ -235,23 +241,13 @@ footer {
     flex: inherit;
     margin: 0 auto;
     margin-top: 100px;
-    background-image: url("../img/logo3.gif");
+    background-image: url("../img/toadstoolback.gif");
     background-size: cover;
     background-repeat: no-repeat;
     transition: ease;
   }
 
-  .logo:hover {
-    background-image: url("../img/logo4.gif");
-  }
 
-  .logo h2 {
-    display: none;
-  }
-
-  .logo h2 span {
-    font-size: 40px;
-  }
 
   .banner h2 {
     /*display: none;*/
