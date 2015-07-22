@@ -240,6 +240,10 @@ footer {
     background-repeat: no-repeat;
   }
 
+  .logo:hover {
+    background-image: url("../img/logo4.gif");
+  }
+
   .logo h2 {
     display: none;
   }
