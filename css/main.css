@@ -82,6 +82,13 @@ header {
   font-family: 'Raleway', sans-serif;
 }
 
+.right hr {
+  width: 80%;
+}
+
+.copy {
+  color: #6d6d6d;
+}
 
 
 
