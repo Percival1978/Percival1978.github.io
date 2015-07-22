@@ -70,23 +70,16 @@ header {
 
 .right {
   flex: 1;
+  text-align: center;
 }
 
 .logo {
-  flex: 1;
+  display: none;
 }
 
-.logo h2 {
-  flex: 1;
+.right h1 {
+  margin-top: 200px;
   font-family: 'Raleway', sans-serif;
-  font-size: 2em;
-  position: relative;
-  top: 50px;
-}
-.logo h2 span {
-  color: #4bb8d2;
-  font-family: 'Raleway', sans-serif;
-  font-size: 45px;
 }
 
 
@@ -233,6 +226,7 @@ footer {
   }
 
   .logo {
+    display: flex;
     background-color: #fff;
     opacity: 0.9;
     border-radius: 50%;
@@ -244,21 +238,14 @@ footer {
     background-image: url("../img/toadstoolback.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    transition: ease;
   }
 
 
-
-  .banner h2 {
-    /*display: none;*/
-    font-size: 1.5em;
-    margin-top: 220px;
-  }
-
-  .mobileHead {
+  .right h1 {
     display: block;
     font-family: 'Raleway', sans-serif;
     color: white;
+    margin-top: 100px;
   }
 
 
