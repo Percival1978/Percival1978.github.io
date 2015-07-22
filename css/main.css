@@ -238,6 +238,7 @@ footer {
     background-image: url("../img/logo3.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    transition: ease;
   }
 
   .logo:hover {
@@ -259,8 +260,9 @@ footer {
   }
 
   .mobileHead {
-    display: flex;
+    display: block;
     font-family: 'Raleway', sans-serif;
+    color: white;
   }
 
 
