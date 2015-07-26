@@ -109,7 +109,7 @@ header {
 .first {
   background-color: #fff;
   margin-top: 1000px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 
@@ -118,7 +118,6 @@ header {
   font-family: 'Raleway', sans-serif;
   text-align: left;
   padding: 10%;
-  margin-bottom: 250px;
   background-color: #fff;
   opacity: 0.8;
 }
@@ -136,6 +135,14 @@ header {
 .textBox a {
   text-decoration: none;
   color: #4bb8d2;
+}
+
+.image {
+  flex: 1;
+  background-image: url("../img/kids.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
 }
 
 
@@ -265,6 +272,11 @@ footer {
 
   .textBox {
     height: 100%;
+  }
+
+  .image {
+    background-size: contain;
+    height: 280px;
   }
 
   footer {
