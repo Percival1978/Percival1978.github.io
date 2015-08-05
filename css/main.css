@@ -110,6 +110,10 @@ section a .fa {
   .left {
     display: none;
   }
+
+  .right {
+    background-color: inherit;
+  }
   header {
     font-size: 1em;
     top: 150px;
