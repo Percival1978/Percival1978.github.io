@@ -101,3 +101,23 @@ section a {
 section a .fa {
   margin-right: 10px;
 }
+
+@media screen and (max-width:767px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left {
+    display: none;
+  }
+  header {
+    font-size: 1em;
+    top: 150px;
+  }
+  section {
+    left: 10px;
+  }
+  section a {
+    font-size: 1em;
+  }
+}
