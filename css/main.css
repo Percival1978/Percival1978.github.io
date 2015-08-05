@@ -106,6 +106,7 @@ section a .fa {
   main {
     flex-direction: column;
     width: 100%;
+    min-height: 667px;
   }
   .left {
     display: none;
@@ -119,7 +120,7 @@ section a .fa {
     top: 150px;
   }
   section {
-    left: 10px;
+    left: 20px;
   }
   section a {
     font-size: 1em;
