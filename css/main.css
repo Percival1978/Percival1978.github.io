@@ -50,6 +50,10 @@ main {
   flex-direction: row;
   min-height: 768px;
   color: white;
+  background: -webkit-linear-gradient(to bottom right, #191919, #696969); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom right, #191919, #696969); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom right, #191919, #696969); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #191919, #696969); /* Standard syntax */
 }
 
 .left {
@@ -95,5 +99,5 @@ section a {
 }
 
 section a .fa {
-  font-size: 1.6em;
+  margin-right: 10px;
 }
