@@ -93,3 +93,7 @@ section a {
   color: #4bb8d2;
   text-decoration: none;
 }
+
+section a .fa {
+  font-size: 1.6em;
+}
