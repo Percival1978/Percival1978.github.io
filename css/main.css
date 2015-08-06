@@ -78,7 +78,7 @@ header {
 }
 
 header h3 {
-  /*color: #4bb8d2;*/
+  color: #a8ccbd;
   font-style: italic;
 }
 
@@ -98,6 +98,7 @@ section a {
 
 section a .fa {
   margin-right: 10px;
+  color: #a8ccbd;
 }
 
 @media screen and (max-width:767px) {
