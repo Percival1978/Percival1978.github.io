@@ -62,6 +62,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /*opacity: 0.7;*/
 }
 
 .right {
@@ -73,13 +74,14 @@ header {
   margin: 0 auto;
   text-align: center;
   font-size: 1.5em;
-  border: 3px solid #fff;
+  border: 5px solid #fff;
   border-radius: 15px;
 }
 
 header h3 {
   color: #a8ccbd;
   font-style: italic;
+  font-size: 1em;
 }
 
 section {
