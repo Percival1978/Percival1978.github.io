@@ -62,12 +62,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*opacity: 0.7;*/
 }
 
 .right {
   flex: 2;
   padding: 5%;
+  padding-top: 5%;
 }
 
 header {
@@ -103,6 +103,12 @@ section a .fa {
   color: #a8ccbd;
 }
 
+aside {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 5%;
+}
+
 @media screen and (max-width:767px) {
   main {
     flex-direction: column-reverse;
@@ -110,7 +116,7 @@ section a .fa {
     min-height: 667px;
   }
   .left {
-    /*display: none;*/
+    display: none;
   }
 
   .right {
