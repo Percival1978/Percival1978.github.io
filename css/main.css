@@ -102,12 +102,12 @@ section a .fa {
 
 @media screen and (max-width:767px) {
   main {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     min-height: 667px;
   }
   .left {
-    display: none;
+    /*display: none;*/
   }
 
   .right {
@@ -122,6 +122,6 @@ section a .fa {
     left: 20px;
   }
   section a {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
