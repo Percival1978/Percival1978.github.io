@@ -40,23 +40,18 @@ body, html {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  color: white;
 }
 
 
 /*Flexheader*/
 
-main {
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
 .right {
   flex: 1;
-  padding: 15%;
+  padding: 10%;
   background-color: #3d3b65;
   margin: 0;
-  height: 800px;
+  /*height: 800px;*/
 }
 
 header {
@@ -83,8 +78,7 @@ section {
 
 section div {
   flex: 1;
-  height: 200px;
-  width: 400px;
+  padding: 20%;
 }
 
 .sites {
@@ -132,27 +126,16 @@ footer aside {
 }
 
 @media screen and (max-width:767px) {
-  main {
-    flex-direction: column-reverse;
-    width: 100%;
-    min-height: 667px;
-  }
-  .left {
-    display: none;
-  }
 
-  .right {
-    background-color: inherit;
-  }
+
   header {
     font-size: 1em;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  div {
-    left: 20px;
-  }
-  div a {
-    font-size: 1.2em;
+
+  footer {
+    padding: 1%;
+    font-size: 0.7em;
   }
 }
