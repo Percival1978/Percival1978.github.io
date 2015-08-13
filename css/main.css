@@ -61,6 +61,7 @@ header {
   border: 5px solid #fff;
   border-radius: 15px;
   padding: 10%;
+  margin-bottom: 30px;
 }
 
 header h3 {
@@ -81,9 +82,9 @@ section {
   background-color: #34495e;
 }
 
-section div {
+section div, a {
   flex: 1;
-  padding: 20%;
+  padding: 10%;
 }
 
 .sites {
@@ -119,6 +120,7 @@ footer div a {
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
+  padding: 0;
 }
 
 footer div a .fa {
@@ -137,6 +139,10 @@ footer aside {
     height: 500px;
   }
 
+  .right a {
+    padding: 0;
+  }
+
   header {
     font-size: 1em;
     margin-top: 50px;
@@ -147,7 +153,7 @@ footer aside {
     padding: 20%;
   }
 
-  section div {
+  section div, a {
     padding: 40%;
   }
 
