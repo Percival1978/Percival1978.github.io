@@ -47,27 +47,16 @@ body, html {
 
 main {
   display: flex;
-  flex-direction: row;
-  min-height: 768px;
+  flex-direction: column;
   color: white;
-  background: -webkit-linear-gradient(to bottom right, #ff5a19, #d43c00);
-  background: -o-linear-gradient(to bottom right, #ff5a19, #d43c00);
-  background: -moz-linear-gradient(to bottom right, #ff5a19, #d43c00);
-  background: linear-gradient(to bottom right, #ff5a19, #d43c00);
-}
-
-.left {
-  flex: 1;
-  background-image: url("../img/tech_wallpaper.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .right {
-  flex: 2;
-  padding: 5%;
-  padding-top: 5%;
+  flex: 1;
+  padding: 15%;
+  background-color: #3d3b65;
+  margin: 0;
+  height: 800px;
 }
 
 header {
@@ -76,15 +65,43 @@ header {
   font-size: 1.5em;
   border: 5px solid #fff;
   border-radius: 15px;
+  padding: 10%;
 }
 
 header h3 {
-  color: #a8ccbd;
+  color: #6c7e8f;
   font-style: italic;
   font-size: 1em;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #34495e;
+}
+
+section div {
+  flex: 1;
+  height: 200px;
+  width: 400px;
+}
+
+.sites {
+  background-image: url("../img/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+footer {
+  background-color: #4a6075;
+  padding: 10%;
+  text-align: left;
+}
+
+div {
   position: relative;
   margin: 0 auto;
   line-height: 2em;
@@ -92,19 +109,24 @@ section {
   padding: 5%;
 }
 
-section a {
+footer aside p {
+  color: #fff;
+  font-style: italic;
+  font-size: 1em;
+}
+
+footer div a {
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
 }
 
-section a .fa {
+footer div a .fa {
   margin-right: 10px;
-  color: #a8ccbd;
+  color: #6c7e8f;
 }
 
-aside {
-  text-align: center;
+footer aside {
   font-size: 1.3em;
   padding: 5%;
 }
@@ -127,10 +149,10 @@ aside {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  section {
+  div {
     left: 20px;
   }
-  section a {
+  div a {
     font-size: 1.2em;
   }
 }
