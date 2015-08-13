@@ -134,6 +134,14 @@ footer aside {
     margin-bottom: 50px;
   }
 
+  section {
+    padding: 20%;
+  }
+
+  section div {
+    padding: 40%;
+  }
+
   footer {
     padding: 1%;
     font-size: 0.7em;
