@@ -51,7 +51,7 @@ body, html {
   padding: 10%;
   background-color: #3d3b65;
   margin: 0;
-  /*height: 800px;*/
+  text-align: center;
 }
 
 header {
@@ -69,6 +69,11 @@ header h3 {
   font-size: 1em;
 }
 
+.right a {
+  text-decoration: none;
+  color: #fff;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -82,6 +87,7 @@ section div {
 }
 
 .sites {
+  flex: 1;
   background-image: url("../img/logo.png");
   background-position: center;
   background-size: contain;
