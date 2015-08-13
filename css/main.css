@@ -135,7 +135,7 @@ footer aside {
 
 @media screen and (max-width:767px) {
 
-  .right, section, footer {
+  .right, footer {
     height: 500px;
   }
 
