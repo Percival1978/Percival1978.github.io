@@ -81,20 +81,27 @@ header h3 {
 
 section {
   display: flex;
-  height: 500px;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
   background-color: #34495e;
 }
 
-section div, a {
+section div {
+  display: flex;
   flex: 1;
-  padding: 10%;
+  margin: 0;
+  padding: 2%;;
+}
+
+section div a {
+  flex: 1;
+  height: 200px;
+  /*width: 300px;*/
+  border: 1px solid white;
+  margin: 20px;
 }
 
 .sites {
-  flex: 1;
-  margin: 0 auto;
   background-image: url("../img/logo.png");
   background-position: center;
   background-size: contain;
