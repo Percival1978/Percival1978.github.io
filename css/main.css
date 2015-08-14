@@ -49,7 +49,7 @@ body, html {
 .right {
   flex: 1;
   padding: 10%;
-  background-image: url("../img/clouds.jpg");
+  background-image: url("../img/clouds2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ header {
 }
 
 header h3 {
-  color: #6c7e8f;
+  color: #fff;
   font-style: italic;
   font-size: 1em;
 }
@@ -97,14 +97,20 @@ section div a {
   flex: 1;
   height: 200px;
   /*width: 300px;*/
-  border: 1px solid white;
   margin: 20px;
 }
 
-.sites {
-  background-image: url("../img/logo.png");
+.tdp {
+  background-image: url("../img/phonebooth.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inthecut {
+  background-image: url("../img/mainFlowers.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
