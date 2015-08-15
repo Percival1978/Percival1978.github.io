@@ -77,6 +77,8 @@ header h3 {
 .right a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  top: 50px;
 }
 
 section {
