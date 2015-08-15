@@ -178,14 +178,14 @@ section div a {
 }
 
 .tdp {
-  background-image: url("../img/phonebooth.png");
+  background-image: url("../img/phoneBooth.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .inthecut {
-  background-image: url("../img/mainFlowers.jpg");
+  background-image: url("../img/mainFlowers.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
