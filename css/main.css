@@ -161,16 +161,19 @@ section {
   flex-direction: row;
   flex: 1;
   background-color: #34495e;
+  padding: 10%;
 }
 
 .imageBox {
   display: flex;
   flex: 1;
+  margin-top: 30px;
 }
 
 .imageBox a {
   text-decoration: none;
   color: white;
+  font-size: 2em;
 }
 
 
@@ -197,7 +200,13 @@ section {
 }
 
 .firstBox {
-  background-image: url("../img/phoneBooth.png");
+  background-image: url("../img/phoneBooth.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secondBox {
+  background-image: url("../img/flowers.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -220,7 +229,7 @@ footer {
   text-align: left;
 }
 
-div {
+footer div {
   position: relative;
   margin: 0 auto;
   line-height: 2em;
