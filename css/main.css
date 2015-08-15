@@ -158,37 +158,59 @@ header h3 {
 
 section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   background-color: #34495e;
 }
 
-section div {
+.imageBox {
   display: flex;
   flex: 1;
-  margin: 0;
-  padding: 2%;;
 }
 
-section div a {
-  flex: 1;
-  height: 200px;
-  /*width: 300px;*/
-  margin: 20px;
+.imageBox a {
+  text-decoration: none;
+  color: white;
 }
 
-.tdp {
+
+.overlay {
+  border-radius: 20px;
+  background:rgba(0,0,0,.75);
+  text-align:center; padding:45px 0 66px 0;
+  opacity:0;
+  height: 300px;
+  width: 300px;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+.imageBox:hover .overlay {
+               opacity:1;
+             }
+
+.plus {
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:96px;
+}
+
+.firstBox {
   background-image: url("../img/phoneBooth.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.inthecut {
-  background-image: url("../img/mainFlowers.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.tdp {
+
+}
+
+.inthecut:hover {
+  background-color: #000;
+  opacity: 0.9;
+
 }
 
 
