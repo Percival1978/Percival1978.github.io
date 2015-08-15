@@ -9,25 +9,15 @@ $(document).ready(function(){
   return false;
   });
 
-  //slider
-  // $('a').click(function() {
-  //   $( $.attr(this, "href") ).toggleClass("hide").toggleClass("contact");
-  //   // Animation complete.
-  // });
 
-// mobile nav toggle
-$(".mobileButton").click(function(){
-  $(".smallNav").toggleClass("hide");
-  // $(".smallNav a").slideToggle("slow");
+// nav toggle
+$(".button").click(function(){
+  $(".sideNav").toggleClass("hidden");
 });
 
 // spinning button
-$('.mobileButton').on('click', function(){
-  $(this).addClass('active').delay(1000).queue(function(next){
-    $(this).removeClass('active');
-
-    next();
-  });
+$('.button').on('click', function(){
+  $(".navButton").toggleClass('hide');
 });
 
 
