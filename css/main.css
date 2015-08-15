@@ -164,6 +164,10 @@ section {
   padding: 10%;
 }
 
+section div {
+  margin: 0 auto;
+}
+
 .imageBox {
   display: flex;
   flex: 1;
