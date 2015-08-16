@@ -264,6 +264,10 @@ footer div a {
   line-height: 2em;
 }
 
+footer div a:hover {
+  color: #333;
+}
+
 footer div a .fa {
   margin-right: 10px;
   color: #6c7e8f;
@@ -337,4 +341,5 @@ footer aside {
   footer div a {
     font-size: 1.5em;
   }
+
 }
