@@ -253,11 +253,11 @@ footer div {
 footer aside p {
   color: #fff;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 footer div a {
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: #fff;
   text-decoration: none;
   padding: 0;
@@ -308,5 +308,13 @@ footer aside {
     padding: 1%;
     font-size: 0.7em;
     height: 500px;
+  }
+
+  footer aside p {
+    font-size: 1.5em;
+  }
+
+  footer div a {
+    font-size: 1.5em;
   }
 }
