@@ -160,6 +160,17 @@ header h3 {
   color: #fff;
   position: relative;
   top: 50px;
+  border: 3px solid white;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.right a:hover {
+  transform: rotateY(360deg);
+  transition: 0.6s;
+	transform-style: preserve-3d;
+  background-color: #2582ab;
+  opacity: 0.8;
 }
 
 section {
@@ -202,8 +213,11 @@ section div {
 }
 
 .imageBox:hover .overlay {
-               opacity:0.9;
-             }
+   opacity:0.9;
+   transform: rotateY(360deg);
+   transition: 0.6s;
+ 	transform-style: preserve-3d;
+ }
 
 .plus {
   font-family:Helvetica;
@@ -233,6 +247,19 @@ section div {
   background-color: #000;
   opacity: 0.9;
 
+}
+
+.largeSite {
+  background-color: orange;
+  padding: 10%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.noShow {
+  display: none;
 }
 
 
