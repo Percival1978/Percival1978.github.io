@@ -169,7 +169,8 @@ header h3 {
   transform: rotateY(360deg);
   transition: 0.6s;
 	transform-style: preserve-3d;
-  background-color: #2582ab;
+  color: #2582ab;
+  background-color: #fff;
   opacity: 0.8;
 }
 
