@@ -195,7 +195,8 @@ section div {
   margin: 30px;
 }
 
-.imageBox p {
+.imageBox a {
+  text-decoration: none;
   color: white;
   font-size: 2em;
   margin: 0 auto;
@@ -342,7 +343,7 @@ footer aside {
     padding: 0;
   }
 
-  .overlay p {
+  .overlay a {
     font-size: 1em;
   }
 
