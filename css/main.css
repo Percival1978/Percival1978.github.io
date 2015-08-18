@@ -195,11 +195,11 @@ section div {
   margin: 30px;
 }
 
-.imageBox a {
-  text-decoration: none;
+.imageBox p {
   color: white;
   font-size: 2em;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 
@@ -240,9 +240,6 @@ section div {
   background-repeat: no-repeat;
 }
 
-.tdp {
-
-}
 
 .inthecut:hover {
   background-color: #000;
@@ -253,10 +250,7 @@ section div {
 .largeSite {
   background-color: orange;
   padding: 10%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  height: 500px;
 }
 
 .noShow {
