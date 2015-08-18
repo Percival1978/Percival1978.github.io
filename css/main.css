@@ -307,7 +307,7 @@ footer aside {
   }
 
   .right a {
-    padding: 0;
+    padding: 3%;
   }
 
   header {
@@ -342,7 +342,7 @@ footer aside {
     padding: 0;
   }
 
-  .overlay a {
+  .overlay p {
     font-size: 1em;
   }
 
