@@ -254,14 +254,34 @@ section div {
   background-color: orange;
 }
 
-.largeSite {
-  background-color: orange;
-  padding: 10%;
-  height: 500px;
+aside {
+  display: flex;
 }
 
 .noShow {
-  display: none;
+  display:none;
+}
+
+.largeSite {
+  flex-direction: row;
+  background-color: orange;
+  padding: 5%;
+}
+
+.website {
+  flex: 2;
+  border: 1px solid white;
+  height: 300px;
+  margin: 10px;
+  float: left;
+}
+
+.links {
+  flex: 1;
+  border: 1px solid white;
+  height: 300px;
+  margin: 10px;
+  float: left;
 }
 
 
