@@ -179,10 +179,19 @@ section aside {
 
 .tdpLink {
   background-color: #4f628e;
+  color: #152854;
+  text-align: center;
 }
 
 .inTheCutLink {
-  background-color: #3f3075;
+  background-color: #9acd32;
+  color: #6b8e23;
+  text-align: center;
+}
+
+section aside h1 {
+  margin-top: 45%;
+
 }
 
 
