@@ -177,11 +177,19 @@ section aside {
   background-repeat: no-repeat;
 }
 
+.tdpLink {
+  background-color: #2e4272;
+}
+
+.inTheCutLink {
+  background-color: #403075;
+}
+
 
 /*Start footer*/
 
 footer {
-  background-color: #4a6075;
+  background-color: #2e4272;
   padding: 10%;
   text-align: left;
 }
@@ -240,6 +248,9 @@ footer aside {
     margin-bottom: 50px;
   }
 
+  section aside {
+    width: 100%;
+  }
 
 
   footer {
