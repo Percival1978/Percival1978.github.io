@@ -157,6 +157,26 @@ header h3 {
 
 /*Start section*/
 
+section aside {
+  width: 50%;
+  height: 500px;
+  float: left;
+}
+
+.tdp {
+  background-image: url("../img/phoneBooth.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inTheCut {
+  background-image: url("../img/flowers.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 /*Start footer*/
 
@@ -202,6 +222,8 @@ footer aside {
   padding: 5%;
 }
 
+/*Start media queries*/
+
 @media screen and (max-width:767px) {
 
   .right {
@@ -218,7 +240,7 @@ footer aside {
     margin-bottom: 50px;
   }
 
-  
+
 
   footer {
     padding: 1%;
