@@ -20,18 +20,7 @@ $('.button').on('click', function(){
   $(".navButton").toggleClass('hide');
 });
 
-// aside hide
-$(".tdp").click(function(){
-  $("#tdp").slideToggle("slow", function() {
-    // Animation complete.
-  });
-});
 
-$(".inTheCut").click(function(){
-  $("#inTheCut").slideToggle("slow", function() {
-    // Animation complete.
-  });
-});
 
 
 
