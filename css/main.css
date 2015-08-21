@@ -155,12 +155,50 @@ header h3 {
   font-size: 1em;
 }
 
+.about {
+  padding: 10%;
+  background-color: #ff4919;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.about a {
+  text-decoration: none;
+  color: #ffaf9a;
+}
+
 /*Start section*/
+
 
 section aside {
   width: 50%;
   height: 500px;
   float: left;
+}
+
+section aside a {
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 3%;
+  color: white;
+  font-size: 1.5em;
+}
+
+section aside a .fa {
+  font-size: 1.5em;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+}
+
+
+.tdpLink a {
+  background-color: #0f90be;
+}
+
+.inTheCutLink a {
+  background-color: #6b8e23;
 }
 
 .tdp {
@@ -178,7 +216,6 @@ section aside {
 }
 
 .tdpLink {
-  /*background-color: #4f628e;*/
   color: #152854;
   text-align: center;
 }
@@ -187,10 +224,14 @@ section aside {
   background-color: #9acd32;
   color: #6b8e23;
   text-align: center;
+}
+
+.inTheCutLink h1 {
   font-family: 'Anton', sans-serif;
 }
 
 section aside img {
+  display: block;
   margin: 0 auto;
   height: 30%;
   margin-top: 150px;
