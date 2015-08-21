@@ -168,6 +168,12 @@ header h3 {
   color: #ffaf9a;
 }
 
+.about img {
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 200px;
+}
+
 /*Start section*/
 
 
