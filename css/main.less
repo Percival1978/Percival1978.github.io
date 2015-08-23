@@ -308,6 +308,7 @@ footer div a .fa {
 }
 
 footer aside {
+  border-top: 5px solid #6c7e8f;
   font-size: 1.3em;
   padding: 5%;
 }
@@ -316,6 +317,15 @@ footer aside {
   background-color: #000;
   img {
     width: 50%;
+    float: left;
+  }
+  .copy {
+    width: 50%;
+    float: left;
+    padding-right: 5%;
+    padding-top: 1%;
+    text-align: right;
+    background-color: inherit;
   }
 }
 
@@ -341,19 +351,30 @@ footer aside {
     width: 100%;
   }
 
+  .inTheCutLink h1 {
+    margin-top: 100px;
+  }
+
 
   footer {
     padding: 1%;
     font-size: 0.7em;
     height: 500px;
+    aside, div {
+      border: none;
+    }
+    aside p {
+      font-size: 1.5em;
+    }
+    div a {
+      font-size: 1.5em;
+    }
   }
 
-  footer aside p {
-    font-size: 1.5em;
-  }
-
-  footer div a {
-    font-size: 1.5em;
+  .aaron {
+    img, .copy {
+      width: 100%;
+    }
   }
 
 }
