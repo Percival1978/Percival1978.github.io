@@ -14,3 +14,6 @@ $(document).ready(function(){
 setTimeout(function(){
   $('.fader').addClass('reveal');
 },1000);
+setTimeout(function(){
+  $('.head').removeClass('small');
+},3500);
