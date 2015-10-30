@@ -133,7 +133,6 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  border-bottom: 10px solid #65ccdd;
 }
 
 .fader {
@@ -157,78 +156,90 @@ body {
   top: 100%;
   left: 0;
   padding: 2%;
+  font-size: 1.5em;
+}
+
+.menu {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.about p, h1 {
+  margin: 0 auto;
+}
+
+.about div {
+  width: 100%;
+  float: left;
+}
+
+.time {
+  height: 50px;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.gallery {
+  margin-bottom: 200px;
+}
+
+.about h1 {
+  font-size: 3em;
 }
 
 .about img {
   width: 100%;
   float: left;
-  padding: 2%;
+  /*padding: 2%;*/
 }
 
-.about p {
-  margin: 10px 0 10px 100px;
-  line-height: 2em;
-  font-style: italic;
-}
 
-footer {
-  position: absolute;
+
+.page-foot {
+  display: block;
+  width: 100%;
+  background-color: #65ccdd;
+  position: fixed;
+  bottom: 0;
   left: 0;
-  top: 500%;
-  width: 100%;
-  background-color: #16191e;
-  border-top: 10px solid #65ccdd;
-  padding: 10%;
+  opacity: 0.8;
 }
 
-footer iframe {
-  width: 100%;
-  margin-bottom: 30px;
+.sub-contacts, .social {
+  display: none;
 }
 
-.address {
-  position: relative;
-  padding: 2%;
-  text-align: left;
-  width: 100%;
-  height: 220px;
-  border-bottom: 1px solid #65ccdd;
-  border-top: 1px solid #65ccdd;
-  color: white;
+.sub-contacts {
+  padding: 1%;
+  float: left;
 }
 
-.address p:first-child {
-  color: #65ccdd;
+.page-foot p {
+  margin-left: 30px;
 }
 
-.mail {
-  position: relative;
-  text-align: left;
-  width: 100%;
-  height: 220px;
-  padding: 5%;
-}
-
-.mail a {
-  position: relative;
-  top: 50px;
-  line-height: 2em;
+.page-foot p, a {
   text-decoration: none;
-  color: white;
+  color: #16191e;
+  display: inline-block;
 }
 
-.mail a i {
-  margin-right: 10px;
+.sub-contacts a::before {
+  content: " | ";
 }
 
-.logo {
-  width: 100%;
-  height: 220px;
-  border-top: 1px solid #65ccdd;
-  background-image: url('../img/InSeason.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.sub-contacts a:first-child::before {
+  content: "";
+}
+
+.social {
+  float: right;
+  font-size: 2em;
+  padding: 1.2%;
+}
+
+.social i {
+  margin-right: 25px;
 }
 
 
@@ -327,47 +338,40 @@ footer iframe {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen
+     and (min-device-width: 375px)
+     and (max-device-width: 700px)
+     and (-webkit-min-device-pixel-ratio: 2)
+     and (orientation: landscape) {
+
+       .sub-contacts, .social {
+         display: none;
+       }
+
+   }
+
+@media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition */
     .about img {
       width: 33%;
       float: left;
-      padding: 2%;
+      /*padding: 2%;*/
     }
 
-    footer {
-      padding: 2%;
+    .page-foot {
+      position: fixed;
     }
 
-    footer div, iframe {
-      float: left;
+    .page-foot div {
+     width: auto;
     }
 
-    footer iframe {
-      display: none;
+    .sub-contacts, .social {
+      display: block;
     }
 
-    footer .address {
-      width: 33%;
-      border-top: none;
-      border-bottom: none;
-      border-right: 1px solid #65ccdd;
-    }
 
-    footer .mail {
-      width: 33%;
-      border-top: none;
-      border-right: 1px solid #65ccdd;
-    }
 
-    .mail a {
-      top: 0;
-    }
-
-    footer .logo {
-      width: 33%;
-      border-top: none;
-    }
 }
 
 @media print,
