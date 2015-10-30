@@ -187,12 +187,11 @@ body {
   font-size: 3em;
 }
 
-.about img {
+.gallery img {
   width: 100%;
   float: left;
-  /*padding: 2%;*/
+  opacity: 1;
 }
-
 
 
 .page-foot {
@@ -236,14 +235,6 @@ body {
   display: inline-block;
 }
 
-.sub-contacts a::before {
-  content: " | ";
-}
-
-.sub-contacts a:first-child::before {
-  content: "";
-}
-
 .social {
   float: right;
   font-size: 2em;
@@ -252,6 +243,10 @@ body {
 
 .social i {
   margin-right: 25px;
+}
+
+.social img {
+  width: 30px;
 }
 
 
@@ -358,6 +353,7 @@ body {
 
        .gallery img {
          width: 50%;
+         opacity: 1;
        }
 
        .sub-contacts {
@@ -380,14 +376,19 @@ body {
          text-align: right;
        }
 
+
    }
 
 @media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition */
-    .about img {
+    .gallery img {
       width: 33%;
       float: left;
-      /*padding: 2%;*/
+      opacity: 0.7;
+    }
+
+    .gallery img:hover {
+      opacity: 1;
     }
 
     .page-foot {
@@ -401,6 +402,15 @@ body {
     .sub-contacts, .social {
       display: block;
       padding: 2%;
+    }
+
+    .sub-contacts a::before {
+      content: " | ";
+      margin: 10px;
+    }
+
+    .sub-contacts a:first-child::before {
+      content: "";
     }
 
     .sub-contacts-mobile {
