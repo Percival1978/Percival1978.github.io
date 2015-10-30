@@ -205,8 +205,24 @@ body {
   opacity: 0.8;
 }
 
-.sub-contacts, .social {
+.sub-contacts {
   display: none;
+}
+
+.sub-contacts-mobile, .social {
+  font-size: 1.5em;
+  width: 50%;
+  float: left;
+  display: block;
+  padding: 2%;
+}
+
+.sub-contacts-mobile i {
+  margin-left: 20px;
+}
+
+.social {
+  text-align: right;
 }
 
 .sub-contacts {
@@ -344,8 +360,24 @@ body {
      and (-webkit-min-device-pixel-ratio: 2)
      and (orientation: landscape) {
 
-       .sub-contacts, .social {
+       .sub-contacts {
          display: none;
+       }
+
+       .sub-contacts-mobile, .social {
+         font-size: 1.2em;
+         width: 50%;
+         float: left;
+         display: block;
+         padding: 2%;
+       }
+
+       .sub-contacts-mobile i {
+         margin-left: 20px;
+       }
+
+       .social {
+         text-align: right;
        }
 
    }
@@ -368,6 +400,10 @@ body {
 
     .sub-contacts, .social {
       display: block;
+    }
+
+    .sub-contacts-mobile {
+      display: none;
     }
 
 
