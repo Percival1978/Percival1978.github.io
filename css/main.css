@@ -221,9 +221,6 @@ body {
   margin-left: 20px;
 }
 
-.social {
-  text-align: right;
-}
 
 .sub-contacts {
   float: left;
@@ -250,6 +247,7 @@ body {
 .social {
   float: right;
   font-size: 2em;
+  text-align: right;
 }
 
 .social i {
@@ -402,6 +400,7 @@ body {
 
     .sub-contacts, .social {
       display: block;
+      padding: 2%;
     }
 
     .sub-contacts-mobile {
