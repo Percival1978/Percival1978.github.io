@@ -118,9 +118,6 @@ body {
   background-color: #16191e;
 }
 
-/*.top {
-  top: -100%;
-}*/
 
 .head {
   background-image: url('../img/InSeason.png');
@@ -171,7 +168,49 @@ body {
   font-size: 1.2em;
   margin-bottom: 200px;
   opacity: 0.7;
-  width: 70%;
+  width: 80%;
+}
+
+.large-images {
+  margin-bottom: 200px;
+  height: 100%;
+  width: 100%;
+}
+
+.cup {
+  background-image: url('../img/cup.jpg');
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+
+.banana {
+  background-image: url('../img/banana.jpg');
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+
+.burger {
+  background-image: url('../img/burger.jpg');
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+
+.cookies {
+  background-image: url('../img/cookies.jpg');
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
 }
 
 .blue {
@@ -404,6 +443,11 @@ body {
 
     .gallery img:hover {
       opacity: 1;
+    }
+
+    .large-images div {
+      width: 50%;
+      height: 500px;
     }
 
     .page-foot {
