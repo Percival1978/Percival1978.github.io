@@ -298,10 +298,16 @@ body {
 
 .social i {
   margin-right: 25px;
+  color: #020202;
 }
 
 .social img {
   width: 30px;
+}
+
+.logos {
+  width: 100%;
+  float: left;
 }
 
 .logo {
@@ -491,6 +497,11 @@ body {
 
     .sub-contacts-mobile {
       display: none;
+    }
+
+    .logos {
+      width: 50%;
+      height: 450px;
     }
 
 
