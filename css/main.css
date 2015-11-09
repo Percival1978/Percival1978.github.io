@@ -314,6 +314,22 @@ body {
   width: 100%;
 }
 
+.quandButton {
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.quandFoot {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  /*height: 20px;*/
+  width: 100%;
+}
+
+
 
 
 
@@ -380,6 +396,10 @@ body {
 
 .invisible {
     visibility: hidden;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 /*

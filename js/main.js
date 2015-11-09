@@ -9,6 +9,9 @@ $(document).ready(function(){
   });
 });
 
+function quandoo() {
+  $('#quand').removeClass("hide");
+}
 
 // reveal logo
 setTimeout(function(){
