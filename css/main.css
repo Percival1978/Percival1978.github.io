@@ -319,14 +319,25 @@ body {
   margin-right: 30px;
   cursor: pointer;
   z-index: 9999;
+  text-align: right;
+  border-radius: 30px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,9fd8ef+0,65ccdd+100 */
+  background: #e4f5fc; /* Old browsers */
+  background: -moz-linear-gradient(left,  #e4f5fc 0%, #9fd8ef 0%, #65ccdd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #e4f5fc 0%,#9fd8ef 0%,#65ccdd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #e4f5fc 0%,#9fd8ef 0%,#65ccdd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#65ccdd',GradientType=1 ); /* IE6-9 */
+  opacity: 0.7;
+  border: 1px solid #2989d8;
 }
 
-.quandFoot {
+.quandFoot a {
   position: fixed;
-  top: 20px;
-  left: 0;
-  /*height: 20px;*/
-  width: 100%;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+  font-style: italic;
+  padding: 3%;
 }
 
 
@@ -477,6 +488,11 @@ body {
     .head p {
       display: none;
     }
+
+    .quandFoot a {
+      padding: 1%;
+      top: 20px;
+}
 
     .gallery img {
       width: 33%;
