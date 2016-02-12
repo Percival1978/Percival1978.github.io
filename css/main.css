@@ -56,6 +56,7 @@ video {
 .tagline {
   position: relative;
   font-size: 2em;
+	color: blue;
 }
 
 .button-box {
@@ -79,6 +80,17 @@ button {
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.1);
+	background-color: blue;
+}
+
+button a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
 }
 
 footer {
