@@ -1,629 +1,131 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
- box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
 video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-body {
-  background-color: #16191e;
-}
-
-.main {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   min-height: 100%;
-  width: 100%;
-  background-color: #16191e;
+  min-width: 100%;
 }
 
-
-.head {
-  background-image: url('../img/InSeason.png');
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  transition: all 2s ease;
+.content {
+  flex: 10;
   text-align: center;
-}
-
-.small {
-  -ms-transform: scale(0.2,0.2);
-  -webkit-transform: scale(0.2,0.2);
-  transform: scale(0.2,0.2);
-}
-
-.fader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #16191e;
-  transition: all 3s ease-out;
-}
-
-.reveal {
-  left: 100%;
-}
-
-.about {
-  width: 100%;
-  position: absolute;
-  color: #fff;
-  top: 100%;
-  left: 0;
-  padding: 2%;
-  font-size: 1.5em;
-}
-
-.menu {
-  text-align: left;
-  font-size: 1.2em;
-  margin-bottom: 200px;
-  opacity: 0.7;
-  width: 80%;
-}
-
-.large-images {
-  margin-bottom: 200px;
-  height: 100%;
-  width: 100%;
-}
-
-.cup {
-  background-image: url('../img/cup.jpg');
-  background-position: center;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 350px;
-}
-
-.banana {
-  background-image: url('../img/banana.jpg');
-  background-position: center;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 350px;
-}
-
-.burger {
-  background-image: url('../img/burger.jpg');
-  background-position: center;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 350px;
-}
-
-.cookies {
-  background-image: url('../img/cookies.jpg');
-  background-position: center;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 350px;
-}
-
-.blue {
-  color: #65ccdd;
-}
-
-.about p, h1 {
-  margin: 0 auto;
-}
-
-.about div {
-  float: left;
-}
-
-.time {
-  height: 50px;
-  width: 100%;
-  opacity: 0.8;
-}
-
-.gallery {
-  width: 100%;
-  margin-bottom: 200px;
-}
-
-.about h1 {
-  font-size: 3em;
-}
-
-.gallery img {
-  width: 100%;
-  float: left;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-
-
-.page-foot {
-  display: block;
-  width: 100%;
-  background-color: #65ccdd;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  opacity: 0.8;
-}
-
-.sub-contacts {
-  display: none;
-}
-
-.sub-contacts-mobile, .social {
-  font-size: 2em;
-  width: 50%;
-  float: left;
-  display: block;
-  padding: 2%;
-}
-
-.sub-contacts-mobile i {
-  margin-left: 20px;
-}
-
-
-.sub-contacts {
-  float: left;
-}
-
-.page-foot p {
-  margin-left: 30px;
-}
-
-.page-foot p, a {
-  text-decoration: none;
-  color: #16191e;
-  display: inline-block;
-}
-
-.social {
-  float: right;
-  font-size: 2em;
-  text-align: right;
-}
-
-.social i {
-  margin-right: 25px;
-  color: #020202;
-}
-
-.social img {
-  width: 30px;
-}
-
-.logos {
-  width: 100%;
-  float: left;
+  font-family: sans-serif;
+  flex-direction: column;
+  padding: 10%;
 }
 
 .logo {
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.tagline {
+  position: relative;
+}
+
+.button-box {
+  position: relative;
+  display: flex;
+}
+
+.button-box div {
+  flex: 1;
+}
+
+button {
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  border-style: none;
+  flex: 1;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 1%;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer {
+  flex: 1;
   width: 100%;
+  height: 10vh;
+  background-color: #000;
+  opacity: 0.3;
+  display: flex;
+  padding: 1%;
+  /*margin-bottom: 2vh;*/
 }
 
-.quandButton {
-  float: right;
-  margin-right: 30px;
-  cursor: pointer;
-  z-index: 9999;
-  text-align: right;
-  border-radius: 30px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,9fd8ef+0,65ccdd+100 */
-  background: #e4f5fc; /* Old browsers */
-  background: -moz-linear-gradient(left,  #e4f5fc 0%, #9fd8ef 0%, #65ccdd 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #e4f5fc 0%,#9fd8ef 0%,#65ccdd 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #e4f5fc 0%,#9fd8ef 0%,#65ccdd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#65ccdd',GradientType=1 ); /* IE6-9 */
-  opacity: 0.7;
-  border: 1px solid #2989d8;
+footer div {
+  flex: 1;
+  display: flex;
 }
 
-.quandFoot a {
-  position: fixed;
-  top: 10px;
-  right: 5px;
-  cursor: pointer;
-  font-style: italic;
-  padding: 3%;
+footer img {
+  flex: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-.hide {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-   @media only screen
-     and (min-device-width: 375px)
-     and (max-device-width: 700px)
-     and (-webkit-min-device-pixel-ratio: 2)
-     and (orientation: landscape) {
-
-       .gallery img {
-         width: 50%;
-         opacity: 1;
-       }
-
-       .sub-contacts {
-         display: none;
-       }
-
-       .sub-contacts-mobile, .social {
-         font-size: 2em;
-         width: 50%;
-         float: left;
-         display: block;
-         padding: 2%;
-       }
-
-       .sub-contacts-mobile a {
-         margin-left: 30px;
-       }
-
-
-
-       .social {
-         text-align: right;
-       }
-
-
-   }
-
-@media only screen and (max-width: 1100px) {
-  .sub-contacts p {
-    display: none;
+@media only screen and (min-width: 800px) {
+  .tagline {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 
-@media only screen and (min-width: 50em) {
-    /* Style adjustments for viewports that meet the condition */
-    .head p {
-      display: none;
-    }
-
-    .quandFoot a {
-      padding: 1%;
-      top: 20px;
+@media only screen and (max-width: 800px) {
+  .content {
+    flex: 15;
+  }
+  .logo {
+    margin-top: 5%;
+  }
+  .tagline {
+      font-size: 0.8em;
+  }
+  footer {
+    flex-direction: column;
+    flex: 2;
+    opacity: 0.7;
+  }
+  .button-box {
+    flex-direction: column;
+  }
+  button {
+    flex: 5;
+    margin: 1% 30%;
+  }
+  .first {
+    margin-bottom: 30px;
+  }
 }
 
-    .gallery img {
-      width: 33%;
-      float: left;
-      opacity: 0.7;
-    }
-
-    .gallery img:hover {
-      opacity: 1;
-    }
-
-    .large-images div {
-      width: 50%;
-      /*height: 500px;*/
-    }
-
-    .page-foot {
-      position: fixed;
-    }
-
-    .page-foot div {
-     width: auto;
-    }
-
-    .sub-contacts, .social {
-      display: block;
-      padding: 2%;
-    }
-
-    .sub-contacts a::before {
-      content: " | ";
-      margin: 10px;
-    }
-
-    .sub-contacts a:first-child::before {
-      content: "";
-    }
-
-    .sub-contacts-mobile {
-      display: none;
-    }
-
-    .logos {
-      width: 50%;
-      height: 450px;
-    }
-
-
-
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 5%;
+  }
 }
