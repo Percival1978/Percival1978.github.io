@@ -118,7 +118,7 @@ button a {
 }
 
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 1024px) {
   video {
     display: none;
   }
@@ -130,7 +130,7 @@ button a {
     width: 100%;
     background-image: url("../img/popcorn.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.3;
   }
