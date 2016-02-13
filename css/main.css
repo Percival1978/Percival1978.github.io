@@ -41,7 +41,7 @@ video {
   text-align: center;
   font-family: 'Satisfaction', cursive;
   flex-direction: column;
-  padding: 10%;
+  padding: 3% 0 0;
 }
 
 .logo {
@@ -55,7 +55,7 @@ video {
 
 .tagline {
   position: relative;
-  font-size: 2em;
+  font-size: 1.5em;
 	color: blue;
 }
 
@@ -117,6 +117,7 @@ footer img {
   .tagline {
     max-width: 50%;
     margin: 0 auto;
+		font-size: 1.3em;
   }
 }
 

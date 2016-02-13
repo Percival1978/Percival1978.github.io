@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Movie Marathon Slumber Party</title>
   <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+  <!--CDN link for  TweenMax-->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -12,7 +14,7 @@
   <div class="wrapper">
     <video autoplay src="video/stars.mov" loop></video>
     <div class="content">
-      <div class="logo">
+      <div id="logo" class="logo">
         <img src="img/grease.png" alt="">
       </div>
       <div class="tagline">
@@ -44,5 +46,14 @@
     </footer>
   </div>
 
+<script type="text/javascript">
+  var logo = document.getElementById("logo");
+  var tl = new TimelineMax({repeat:20});
+
+  tl.from(logo, 2, {scale:0.5, left:-1000}),
+  tl.to(logo, 2, {scale:1.1, rotation:-30}),
+  tl.to(logo, 2, {scale:0.5, right:-1000});
+
+</script>
 </body>
 </html>
