@@ -13,12 +13,10 @@
 
   <div class="wrapper">
     <video autoplay src="video/stars.mov" loop></video>
+
     <div class="content">
-      <div id="logo" class="logo">
-        <img src="img/grease.png" alt="">
-      </div>
       <div class="tagline">
-        <h1>Movie Marathon Slumber Party</h1>
+        <h1><span id="one">Movie </span><span id="two">Marathon </span><span id="three">Slumber </span><span id="four">Party </span></h1>
       </div>
       <div class="button-box">
         <div></div>
@@ -26,22 +24,15 @@
         <div></div>
       </div>
     </div>
+    <div class="logo">
+      <img id="logo" src="img/grease.png" alt="">
+    </div>
     <footer>
       <div class="first">
-        <img src="img/ticket1.png" alt="">
-        <img src="img/ticket2.png" alt="">
-        <img src="img/ticket3.png" alt="">
-        <img src="img/ticket1.png" alt="">
-        <img src="img/ticket2.png" alt="">
-        <img src="img/ticket3.png" alt="">
+
       </div>
       <div class="second">
-        <img src="img/ticket1.png" alt="">
-        <img src="img/ticket2.png" alt="">
-        <img src="img/ticket3.png" alt="">
-        <img src="img/ticket1.png" alt="">
-        <img src="img/ticket2.png" alt="">
-        <img src="img/ticket3.png" alt="">
+
       </div>
     </footer>
   </div>
@@ -49,10 +40,16 @@
 <script type="text/javascript">
   var logo = document.getElementById("logo");
   var tl = new TimelineMax({repeat:20});
+  var tl2 = new TimelineMax();
+
 
   tl.from(logo, 2, {scale:0.5, left:-1000}),
   tl.to(logo, 2, {scale:1.1, rotation:-30}),
-  tl.to(logo, 2, {scale:0.5, right:-1000});
+  tl.to(logo, 2, {scale:0.5, right:-1000}),
+  tl2.from(one, 1, {opacity:0, scale:0.1}),
+  tl2.from(two, 1, {opacity:0, scale:0.1}),
+  tl2.from(three, 1, {opacity:0, scale:0.1}),
+  tl2.from(four, 1, {opacity:0, scale:0.1});
 
 </script>
 </body>
