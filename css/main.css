@@ -61,9 +61,16 @@ video {
 	display: flex;
   flex: 5;
   text-align: center;
-  font-family: 'Satisfaction', cursive;
   flex-direction: column;
   padding: 3% 0 0;
+}
+
+h1 {
+	font-family: 'Satisfaction', cursive;
+}
+
+h3 {
+	font-family: sans-serif;
 }
 
 .tagline {

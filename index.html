@@ -16,6 +16,7 @@
 
     <div class="content">
       <div class="tagline">
+        <h3 id="ava">You are invited to Ava's</h3>
         <h1><span id="one">Movie </span><span id="two">Marathon </span><span id="three">Slumber </span><span id="four">Party </span></h1>
       </div>
       <div class="button-box">
@@ -45,8 +46,9 @@
 
   tl.from(logo, 2, {scale:0.5, left:-1000}),
   tl.to(logo, 2, {scale:1.1, rotation:-30}),
-  tl.to(logo, 2, {scale:0.5, right:-1000}),
-  tl2.from(one, 1, {opacity:0, scale:0.1}),
+  tl.to(logo, 2, {scale:0.5, right:-1000}, "+=2"),
+  tl2.from(ava, 1, {opacity:0, scale:0.1}),
+  tl2.from(one, 1, {opacity:0, scale:0.1}, "+=2"),
   tl2.from(two, 1, {opacity:0, scale:0.1}),
   tl2.from(three, 1, {opacity:0, scale:0.1}),
   tl2.from(four, 1, {opacity:0, scale:0.1});
