@@ -118,9 +118,21 @@ button a {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-device-width: 768px) {
   video {
     display: none;
+  }
+  .mobile-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/popcorn.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
   }
   .logo {
     margin-top: 5%;
@@ -137,18 +149,7 @@ button a {
 }
 
 @media only screen and (max-width: 600px) {
-  .mobile-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/popcorn.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-  }
+
   .content {
     padding: 5%;
   }
