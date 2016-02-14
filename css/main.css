@@ -30,6 +30,7 @@ body, html {
   margin: 0;
   flex-direction: column;
   display: flex;
+	background-color: #fff;
 }
 
 video {
@@ -70,12 +71,15 @@ video {
   position: relative;
   font-size: 1.8em;
 	line-height: 1.8em;
-	color: blue;
+	color: #000;
 	padding: 1%;
 }
 
 h1 {
 	font-family: 'Satisfaction', cursive;
+	color: blue;
+	opacity: 0.8;
+	line-height: 3em;
 }
 
 h3 {
@@ -138,13 +142,18 @@ button a {
     margin-top: 5%;
   }
   .tagline {
-      font-size: 1.2em;
+      font-size: 1.8em;
 			line-height: 2.2em;
+			font-weight: bold;
   }
+	h1 {
+		line-height: 2em;
+	}
 
   button {
     margin: 0 auto;
 		background-color: blue;
+		font-size: 1.8em;
   }
 }
 
@@ -153,4 +162,12 @@ button a {
   .content {
     padding: 5%;
   }
+	.tagline {
+		font-size: 1.2em;
+		line-height: 1.6em;
+		font-family: sans-serif;
+	}
+	h1, h3, p {
+		margin: 0;
+	}
 }
