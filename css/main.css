@@ -94,13 +94,17 @@ p {
 	font-family: sans-serif;
 }
 
+p span {
+	color: blue;
+}
+
 .button-box {
   position: relative;
   flex: 1;
 }
 
 button {
-  background-color: #000;
+	background-color: blue;
   opacity: 0.5;
   color: #fff;
   border-style: none;
@@ -114,7 +118,6 @@ button {
 
 button:hover {
 	transform: scale(1.1);
-	background-color: blue;
 }
 
 button a {
