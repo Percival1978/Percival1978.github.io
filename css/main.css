@@ -140,7 +140,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .page-content .content-wrap .content:after, .footer-col-wrapper:after {
+.wrapper:after, .page-content .content-wrap .content:after, .page-content .content-wrap .content div.text:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
