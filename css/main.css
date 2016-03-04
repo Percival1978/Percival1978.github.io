@@ -140,7 +140,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after, .page-content .content-wrap .content:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -231,7 +231,8 @@ pre {
     min-height: 500vh !important; }
 
   .content {
-    flex-direction: column; } }
+    flex-direction: column;
+    height: 100%; } }
 /**
  * Site header
  */
