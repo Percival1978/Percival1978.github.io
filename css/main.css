@@ -157,6 +157,7 @@ pre {
     fill: #828282; }
 
 .page-content .main {
+  overflow: hidden;
   height: 100vh;
   background-color: #000; }
   .page-content .main .button {
