@@ -294,6 +294,10 @@ pre {
   .logo {
     position: absolute !important;
     top: 0 !important; } }
+@media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+  .logo img {
+    width: 55vw !important;
+    margin: 0 auto; } }
 @media only screen and (max-width: 800px) {
   .logo img {
     width: 100%;
