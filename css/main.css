@@ -78,12 +78,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: white;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #d9d9d9; }
   a:hover {
-    color: #111;
+    color: #5383B4;
     text-decoration: underline; }
 
 /**
@@ -162,28 +162,36 @@ pre {
   .page-content .main .button {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 40px;
     z-index: 2;
     padding: 0;
     cursor: pointer;
     color: #A51C36;
-    font-size: 2em; }
+    font-size: 3em; }
   .page-content .main .fa-bars {
     position: fixed;
-    top: 20px;
-    left: 40px;
+    top: 30px;
+    right: 50px;
     z-index: 1;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out; }
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
   .page-content .main .fa-times {
     position: fixed;
-    top: 20px;
-    left: 40px;
-    z-index: 1; }
+    top: 30px;
+    right: 50px;
+    z-index: 1;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
   .page-content .main .hide {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .page-content .main .sideNav {
     position: fixed;
     top: 0px;
@@ -195,7 +203,6 @@ pre {
     opacity: 0.9;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     padding: 0; }
   .page-content .main .hidden {
@@ -228,7 +235,7 @@ pre {
     position: relative;
     top: -100vh; }
     .page-content .main .logo img {
-      height: 80%; }
+      height: 100%; }
 .page-content .content-wrap {
   min-height: 200vh;
   display: flex;
@@ -386,12 +393,12 @@ pre {
 .contact-list,
 .social-media-list {
   list-style: none;
-  margin-left: 0; }
+  color: white; }
 
 .footer-col-wrapper {
   color: white;
-  line-height: 2em;
-  font-size: 1.4em;
+  line-height: 1.8em;
+  font-size: 1.2em;
   margin-left: -15px; }
 
 .footer-col {
@@ -402,7 +409,7 @@ pre {
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
   width: calc(35% - (30px / 2));
-  padding-top: 80px; }
+  padding: 50px 0 0 150px; }
 
 .footer-col-2 {
   width: -webkit-calc(20% - (30px / 2));
@@ -411,13 +418,15 @@ pre {
 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
+  .footer-col-3 img {
+    height: 250px; }
 
 @media screen and (max-width: 800px) {
-  .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
     width: calc(50% - (30px / 2)); }
 
+  .footer-col-1,
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
@@ -426,7 +435,8 @@ pre {
     text-align: center;
     float: none;
     width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
+    width: calc(100% - (30px / 2));
+    padding: 0; } }
 /**
  * Syntax highlighting styles
  */
