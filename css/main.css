@@ -219,8 +219,8 @@ pre {
     font-size: 1.4em;
     line-height: 2em; }
   .page-content .main video {
-    height: 100%;
-    width: 100%; }
+    height: auto;
+    width: 100vw; }
   .page-content .main .logo {
     height: 100%;
     color: #fff;
@@ -289,7 +289,11 @@ pre {
     display: block; } }
 @media only screen and (max-device-width: 1000px) {
   video {
-    display: none; } }
+    display: none; }
+
+  .logo {
+    position: absolute !important;
+    top: 0 !important; } }
 @media only screen and (max-width: 800px) {
   .logo img {
     width: 100%;
