@@ -159,6 +159,65 @@ pre {
 .page-content .main {
   height: 100vh;
   background-color: #000; }
+  .page-content .main .button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    padding: 0;
+    cursor: pointer;
+    color: #A51C36;
+    font-size: 2em; }
+  .page-content .main .fa-bars {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out; }
+  .page-content .main .fa-times {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1; }
+  .page-content .main .hide {
+    opacity: 0; }
+  .page-content .main .sideNav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    background-color: #333;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.9;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 0; }
+  .page-content .main .hidden {
+    left: -300px; }
+  .page-content .main .sideNav nav {
+    height: 100%; }
+  .page-content .main .sideNav ul {
+    list-style: none;
+    position: relative;
+    top: 80px; }
+  .page-content .main .sideNav li {
+    text-decoration: none; }
+  .page-content .main .sideNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 2em;
+    z-index: 1;
+    cursor: auto; }
+  .page-content .main .sideNav .fa {
+    font-size: 1.4em;
+    line-height: 2em; }
   .page-content .main video {
     height: 100%;
     width: 100%; }
@@ -194,11 +253,11 @@ pre {
         .page-content .content-wrap .content div {
           min-height: 50vh; } }
       .page-content .content-wrap .content div.img-one {
-        background-image: url("/images/balls.jpg"); }
+        background-image: url("/images/hero.jpg"); }
       .page-content .content-wrap .content div.img-two {
-        background-image: url("/images/data.jpg"); }
-      .page-content .content-wrap .content div.img-three {
         background-image: url("/images/balls.jpg"); }
+      .page-content .content-wrap .content div.img-three {
+        background-image: url("/images/data.jpg"); }
       .page-content .content-wrap .content div.img-four {
         background-image: url("/images/charts.jpg"); }
       .page-content .content-wrap .content div.text h1 {
@@ -228,6 +287,9 @@ pre {
 @media only screen and (max-width: 800px) {
   .text img {
     display: block; } }
+@media only screen and (max-device-width: 1000px) {
+  video {
+    display: none; } }
 @media only screen and (max-width: 800px) {
   .logo img {
     width: 100%;
@@ -304,7 +366,7 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 10px solid #e8e8e8;
   padding: 30px 0;
   flex: 2;
   background-color: #145599; }
